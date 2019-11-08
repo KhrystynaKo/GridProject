@@ -32,7 +32,7 @@ h2 {
   font-family: $font-header;
 }
 
-h3 { }
+
 
 a {
   text-decoration: none;
@@ -43,15 +43,29 @@ a {
   display: block;
   border: 2px solid $color-light;
   min-width: 250px;
-  padding: 18px 20px;
+  padding: 18px $gap;
   text-align: center;
   height: 60px;
   background-color: rgba($color-light, 0.1);
   font-size: 1.125rem;
   transition: background-color 0.5s;
-}
 
-.btn:hover,
-.btn:focus {
+  &:hover,
+  &:focus {
   background-color: $color-accent;
 }
+
+
+
+  &--big {
+    border: 2px solid $color-primary;
+    background-color: $color-gray;
+  
+    &:hover
+    &:focus {
+      background-color: $color-accent;
+      border: 2px solid $color-primary;
+    }
+  }
+}
+
