@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  font-size: $font-size;
+  font-family: $font-main;
+  color: $color-gray;
+  letter-spacing: 0.1em;
+}
+
+h1 {
+  font-family: $font-header;
+  font-weight: 300;
+  line-height: 1.2em;
+
+  @include lg-min {
+    font-size: 3.75rem;
+  }
+
+  @include lg-md {
+    font-size: 2.5rem;
+  }
+
+  @include md {
+    font-size: 1.875rem;
+  }
+}
+
+h2 {
+  font-family: $font-header;
+}
+
+h3 { }
+
+a {
+  text-decoration: none;
+  color: $color-light;
+}
+
+.btn {
+  display: block;
+  border: 2px solid $color-light;
+  min-width: 250px;
+  padding: 18px 20px;
+  text-align: center;
+  height: 60px;
+  background-color: rgba($color-light, 0.1);
+  font-size: 1.125rem;
+  transition: background-color 0.5s;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: $color-accent;
+}
