@@ -1,0 +1,55 @@
+.form {
+  padding: 1.8rem 0;
+  background-color: $color-primary;
+
+  &-area {
+    display: grid;
+    grid-gap: $gap;
+    grid-template-columns: repeat(3, 1fr);
+
+    &-info {
+      width: 100%;
+      padding: 1.2rem 1.9rem;
+      font-weight: 500;
+      font-size: 1.125rem;
+      font-family: $font-main;
+      color: $color-light;
+      letter-spacing: 0.1em;
+      background-color: rgba($color-light, 0.05%);
+      border: 2px solid transparent;
+      border-bottom: 2px solid rgba($color-light, 0.12);
+      transition: background-color 0.5s linear, border-bottom 0.5s linear;
+
+        &:first-child::placeholder {
+          color: $color-light;
+        }
+
+        &:nth-child(2)::placeholder {
+          color: darken($color-light, 40%);
+        }
+
+        &:hover,
+        &:focus {
+          background-color: rgba($color-light, 0.15%);
+          border-bottom: 2px solid $color-light;
+        }
+
+        &:active {
+          color: $color-light;
+          background-color: rgba($color-light, 0.05%);
+        }
+      
+        &__accent {
+          background-color: rgba($color-light, 0.1%);
+          border-bottom: 2px solid $color-gray;
+          transition: 0.5s;
+
+          &:hover,
+          &:focus {
+            background-color: $color-accent;
+            border: 2px solid $color-light;
+          }
+        }
+    }
+  }
+}
