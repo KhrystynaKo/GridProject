@@ -60,8 +60,6 @@ a {
   background-color: $color-accent;
 }
 
-
-
   &--big {
     border: 2px solid $color-primary;
     background-color: $color-gray;
@@ -72,6 +70,12 @@ a {
       border: 2px solid $color-primary;
     }
   }
+}
+
+.button {
+  margin: $gap auto 1.87rem;
+  height: 3.75rem;
+  max-width: 22rem;
 }
 
 .container {
