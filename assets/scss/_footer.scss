@@ -1,0 +1,55 @@
+.footer {
+  margin-top: 100px;
+  padding: 49px 0;
+  height: 250px;
+  background-color: $color-primary;
+
+  &-icons {
+    position: relative;
+    max-width: 250px;
+    margin: 0 auto 62px;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 65px;
+      left: 87px;
+      width: 75px;
+      height: 2px;
+      background-color: rgba($color-light, 0.1%);
+    }
+    
+
+    & > a {
+      font-size: 2.1rem;
+      color: $color-light;
+      transition: color 0.5s linear;
+
+      &:hover,
+      &:focus i{
+        color: #d66926;
+        }
+
+    }
+  }
+
+  &-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1.15rem;
+    letter-spacing: 0.19rem;
+    line-height: 1;
+
+    &--bold {
+      font-weight: 500;
+      font-size: 0.9em;
+      color: $color-light;
+      letter-spacing: 0.05em;
+    }
+  }
+}

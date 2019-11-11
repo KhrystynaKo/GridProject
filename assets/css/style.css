@@ -1058,6 +1058,61 @@ a {
   letter-spacing: 0.005em;
 }
 
+.footer {
+  margin-top: 100px;
+  padding: 49px 0;
+  height: 250px;
+  background-color: #2d3651;
+}
+
+.footer-icons {
+  position: relative;
+  max-width: 250px;
+  margin: 0 auto 62px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+}
+
+.footer-icons::after {
+  content: "";
+  position: absolute;
+  top: 65px;
+  left: 87px;
+  width: 75px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icons > a {
+  font-size: 2.1rem;
+  color: #ffffff;
+  -webkit-transition: color 0.5s linear;
+  -o-transition: color 0.5s linear;
+  transition: color 0.5s linear;
+}
+
+.footer-icons > a:hover,
+.footer-icons > a:focus i {
+  color: #d66926;
+}
+
+.footer-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 1.15rem;
+  letter-spacing: 0.19rem;
+  line-height: 1;
+}
+
+.footer-title--bold {
+  font-weight: 500;
+  font-size: 0.9em;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+}
+
 @media (min-width: 768px) {
   .header-navbar__hamburger {
     display: none;
