@@ -55,27 +55,36 @@ a {
   font-size: 1.125rem;
   transition: background-color 0.5s;
 
+  @include lg-md {
+    font-size: 1rem;
+    min-width: 200px;
+    height: 50px;
+    padding: 15px $gap;
+  }
+
   &:hover,
   &:focus {
   background-color: $color-accent;
-}
-
-  &--big {
-    border: 2px solid $color-primary;
-    background-color: $color-gray;
-  
-    &:hover
-    &:focus {
-      background-color: $color-accent;
-      border: 2px solid $color-primary;
-    }
   }
 }
-
-.button {
+.btn--big {
   margin: $gap auto 1.87rem;
-  height: 3.75rem;
   max-width: 22rem;
+  min-width: 250px;
+  padding: 18px $gap;
+  text-align: center;
+  height: 60px;
+  display: block;
+  border: 2px solid $color-primary;
+  background-color: $color-gray;
+  font-size: 1.125rem;
+  transition: background-color 0.5s;
+
+  &:hover
+  &:focus {
+    background-color: $color-accent;
+    border: 2px solid $color-primary;
+  }
 }
 
 .container {
