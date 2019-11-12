@@ -1,11 +1,23 @@
 .form {
-  padding: 1.8rem 0;
+  padding: 1.1rem 0;
   background-color: $color-primary;
+
+  @include lg-min {
+    padding: 1.8rem 0;
+    }
 
   &-area {
     display: grid;
     grid-gap: $gap;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include md-min {
     grid-template-columns: repeat(3, 1fr);
+    }
+    @include sm {
+      grid-template-columns: 1fr;
+      }
+  
 
     &-info {
       width: 100%;
@@ -19,7 +31,11 @@
       border: 2px solid transparent;
       border-bottom: 2px solid rgba($color-light, 0.12);
       transition: background-color 0.5s linear, border-bottom 0.5s linear;
-
+      @include md-sm {
+        &:first-child {
+          grid-column: span 2;;
+        }
+        }
         &:first-child::placeholder {
           color: $color-light;
         }
