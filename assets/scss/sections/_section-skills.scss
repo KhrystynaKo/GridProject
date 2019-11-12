@@ -7,7 +7,7 @@
   }
 
   &__container {
-    grid-gap: $gap;
+    grid-gap: $gap / 2;
     padding-bottom: $gap;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
