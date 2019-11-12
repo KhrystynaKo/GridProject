@@ -482,7 +482,7 @@ h1 {
 
 h2 {
   font-family: "Roboto Slab", serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 2px 0 50px;
   letter-spacing: 0.1em;
   line-height: 1.2em;
@@ -521,7 +521,7 @@ a {
   height: 60px;
   display: block;
   border: 2px solid #2d3651;
-  background-color: #637588;
+  background-color: #546373;
   font-size: 1.125rem;
   -webkit-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
@@ -1137,6 +1137,9 @@ a {
   h1 {
     font-size: 3.75rem;
   }
+  h2 {
+    font-size: 2.5rem;
+  }
   .header-content__title {
     margin: 0 0 53px;
   }
@@ -1168,6 +1171,15 @@ a {
   h1 {
     font-size: 1.875rem;
   }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .btn {
+    font-size: 1rem;
+    min-width: 170px;
+    height: 40px;
+    padding: 10px 0;
+  }
   .header-menu {
     background-color: rgba(68, 89, 110, 0.1);
   }
@@ -1189,6 +1201,15 @@ a {
 }
 
 @media (max-width: 575.8px) {
+  .header-content__buttons {
+    display: block;
+    margin: 0 auto;
+    max-width: 170px;
+  }
+  .header-content__buttons .btn:not(:last-of-type) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
   .skills__container {
     grid-template-columns: 1fr;
     grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
