@@ -1,11 +1,13 @@
 .skills {
   padding: $gap / 2;
+  
   padding-bottom: $gap * 2;
   @include sm {
     padding: $gap;
   }
 
   &__container {
+    grid-gap: $gap / 2;
     padding-bottom: $gap;
     grid-gap: $gap / 2;
     display: grid;
