@@ -26,61 +26,59 @@
       height: 390px;
       overflow: hidden;
     } 
-    
+    @include md {
+      height: 385px;
+      overflow: hidden;
+    } 
     @include sm {
-      height: 410px;
+      height: 415px;
       padding-right: 0;
     }
 
     &-text {
+      
       line-height: 1.5;
       letter-spacing: 0.02em; 
       font-size: 1.05rem;
       font-weight: 400;
       border-right: 1px rgba($color-gray, 0.5);
-       
 
-      @include md-min {
-        font-size: 1.17rem;
-        line-height: 1.2;
+      & > p {
+
+        &:first-of-type {
+          position: relative;
+
+          &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: -29px;
+          width: 1px;
+          height: 200px;
+          background-color: rgba($color-gray, 0.2);
+
+            @include sm {
+              display: none;
+            }
+          }
+        }
+        
+
+        @include md-min {
+          font-size: 1.17rem;
+          line-height: 1.2;
+        }
       }
     }
   }
 
   &-image {
-      position: relative;
       display: block;
       max-width: 100%;
       height: auto; 
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 147px;
-        left: -30px;
-        width: 1px;
-        height: 200px;
-        background-color: rgba($color-gray, 0.2);
-      }
-
-      @include lg {
-        max-height: 480px;
-        
-        &::before {
-          top: 110px;
-        }
-      }
-      @include md-sm {
-        max-height: 430px;
-        &::before {
-          top: 80px;
-        }
-      }
       @include sm {
-        margin: 30px auto 70px;
-        &::before {
-          display: none;
-        }
+        margin: 38px auto 60px;
       }
   }
 }

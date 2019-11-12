@@ -12,6 +12,7 @@
   }
 }
 .post {
+  padding-bottom: $gap;
   display: grid;
   grid-gap: $gap;
   grid-template-columns: repeat(3, 1fr);
