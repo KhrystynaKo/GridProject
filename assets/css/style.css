@@ -728,7 +728,9 @@ a {
   padding-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+  grid-template-areas: "a1 a1 a2 a3"
+ "a4 a5 a5 a6"
+ "a7 a8 a9 a6";
 }
 
 .skill-item {
@@ -986,7 +988,9 @@ a {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "a1 a1 a2" "a3 a4 a4 " "a5 a5 a6 ";
+  grid-template-areas: "a1 a1 a2"
+ "a3 a4 a4 "
+ "a5 a5 a6 ";
 }
 
 .post-item {
@@ -1179,7 +1183,8 @@ a {
   }
   .post {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "a1 a1 a2 a3" "a4 a5 a6 a6";
+    grid-template-areas: "a1 a1 a2 a3"
+ "a4 a5 a6 a6";
   }
 }
 
@@ -1205,8 +1210,12 @@ a {
   }
   .skills__container {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "a1 a1 a2" "a3 a4 a4 " "a5 a5 a6 " "a7 a8 a6" "a7 a9 a9";
-  }
+    grid-template-areas: "a1 a1 a2"
+                         "a3 a4 a4 "
+                         "a5 a5 a6 "
+                         "a7 a8 a6"
+                         "a7 a9 a9";
+                          }
 }
 
 @media (max-width: 767.8px) {
@@ -1243,7 +1252,12 @@ a {
 @media (max-width: 767.8px) and (min-width: 576px) {
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
+    grid-template-areas: "a1 a2"
+                          "a3 a2"
+                          "a4 a4"
+                          "a5 a6"
+                          "a5 a7"
+                          "a8 a9";
   }
   .about-content {
     padding: 58px 0 0;
@@ -1259,7 +1273,9 @@ a {
   }
   .post {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "a1 a2" "a3 a4 " "a5 a6 ";
+    grid-template-areas: "a1 a2"
+                          "a3 a4 "
+                          "a5 a6 ";
   }
 }
 
