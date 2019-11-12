@@ -43,14 +43,12 @@ h2 {
 
   @include md {
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   @include sm {
     text-align: center;
   }
 }
-
-
 
 a {
   text-decoration: none;
@@ -106,6 +104,9 @@ a {
 
   @include sm-min {
     max-width: 22rem;
+  }
+  @include sm {
+    margin-bottom: 0;
   }
 }
 

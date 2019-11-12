@@ -26,9 +26,12 @@
       height: 390px;
       overflow: hidden;
     } 
-    
+    @include md {
+      height: 385px;
+      overflow: hidden;
+    } 
     @include sm {
-      height: 410px;
+      height: 415px;
       padding-right: 0;
     }
 
