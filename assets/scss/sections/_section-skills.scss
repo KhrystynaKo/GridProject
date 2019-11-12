@@ -1,9 +1,13 @@
 .skills {
-  padding: $gap;
+  padding: $gap / 2;
+  padding-bottom: $gap * 2;
+  @include sm {
+    padding: $gap;
+  }
 
   &__container {
+    padding-bottom: $gap;
     display: grid;
-    grid-gap: 10px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
       "a1 a1 a2 a3"
